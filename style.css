@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quote-box {
+    background-color: #007AFF;
+    color: #FFF;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .quote-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #007AFF transparent transparent;
+  }
+  
+  .next-quote-box {
+    background-color: #007AFF;
+    color: #FFF;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    height: 60px;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .next-quote-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #007AFF;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  blockquote {
+    font-size: 24px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #new-quote-btn {
+    background-color: #007AFF;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #new-quote-btn:hover {
+    background-color: #0056b3;
+  }
+  
